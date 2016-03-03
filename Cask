@@ -2,19 +2,17 @@
 (source marmalade)
 (source melpa)
 
-;;; Setup
-(depends-on "pallet")
-(depends-on "init-loader")
-
-(depends-on "exec-path-from-shell")
-
-;;; Config
-(depends-on "yasnippet")
-(depends-on "flycheck")
-
-;;; auto-complete
+(depends-on "apache-mode")
 (depends-on "auto-complete")
-
-
-
-
+(depends-on "exec-path-from-shell")
+(depends-on "flycheck")
+(depends-on "init-loader")
+(depends-on "js2-mode")
+(depends-on "markdown-mode")
+(depends-on "pallet")
+(depends-on "redo+")
+(depends-on "ruby-block")
+(depends-on "scss-mode")
+(depends-on "ssh-config-mode")
+(depends-on "yaml-mode")
+(depends-on "yasnippet")

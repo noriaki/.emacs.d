@@ -39,4 +39,5 @@ flycheck_*.el
 # server auth directory
 /server/
 
-
+# auto-complete dict
+ac-comphist.dat
