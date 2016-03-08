@@ -19,5 +19,9 @@
 (depends-on "scss-mode")
 (depends-on "smart-newline")
 (depends-on "ssh-config-mode")
+(depends-on "sublime-themes")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+(depends-on "zenburn-theme")
+
+(depends-on "railscasts-theme" :git "https://github.com/noriaki/railscasts-theme.git")
