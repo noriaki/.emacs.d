@@ -16,3 +16,17 @@
 (setq show-paren-style 'mixed)
 (set-face-background 'show-paren-match-face "grey")
 (set-face-foreground 'show-paren-match-face "black")
+
+;; オープニングメッセージ非表示
+(setq inhibit-startup-message t)
+
+;; 改行コードを表示する
+(setq eol-mnemonic-dos "(CRLF)")
+(setq eol-mnemonic-mac "(CR)")
+(setq eol-mnemonic-unix "(LF)")
+
+;; カラム番号表示
+(column-number-mode t)
+
+;; エラー音OFF
+(setq ring-bell-function 'ignore)

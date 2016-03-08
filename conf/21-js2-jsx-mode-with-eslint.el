@@ -42,3 +42,6 @@
 
 (add-hook 'js2-jsx-mode-hook
           'kui/flycheck-set-checker-executable-from-node-modules)
+
+(add-hook 'js2-jsx-mode-hook
+          'noriaki/align-rules-list-for-javascript)
