@@ -7,8 +7,6 @@
 
 ;; タブをハイライト
 ;; via: http://qiita.com/yyamamot/items/ab5b028aee8f5b81107e
-(add-hook 'font-lock-mode-hook
-          (lambda ()
-            (font-lock-add-keywords
-             nil
-             '(("^\t" 0 'trailing-whitespace prepend)))))
+(defun noriaki/highlight-font-lock-mode-hooks ()
+  (font-lock-add-keywords nil '(("^\t" 0 'trailing-whitespace prepend))))
+(add-hook 'font-lock-mode-hook 'noriaki/highlight-font-lock-mode-hooks)
