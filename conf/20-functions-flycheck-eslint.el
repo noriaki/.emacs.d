@@ -1,14 +1,3 @@
-;; via: http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html
-
-;; use web-mode for .jsx files
-(add-to-list 'auto-mode-alist '("\\.jsx$" . js2-jsx-mode))
-
-;; https://github.com/purcell/exec-path-from-shell
-;; only need exec-path-from-shell on OSX
-;; this hopefully sets up path and other vars better
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
 ;; node_modules/.bin/eslint があれば使う設定
 ;; via: http://qiita.com/k_ui/items/7b7046865216107f3ac2
 (defun kui/traverse-parents-for (filename &optional dirname)
@@ -39,9 +28,3 @@
 
 (defun kui/flycheck-set-checker-executable-from-node-modules ()
   (kui/flycheck-set-node-modules-bin 'javascript-eslint "eslint"))
-
-(add-hook 'js2-jsx-mode-hook
-          'kui/flycheck-set-checker-executable-from-node-modules)
-
-(add-hook 'js2-jsx-mode-hook
-          'noriaki/align-rules-list-for-javascript)

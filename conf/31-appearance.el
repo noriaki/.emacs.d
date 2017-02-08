@@ -25,7 +25,8 @@
 (setq eol-mnemonic-mac "(CR)")
 (setq eol-mnemonic-unix "(LF)")
 
-;; カラム番号表示
+;; 行,カラム番号表示
+(line-number-mode t)
 (column-number-mode t)
 
 ;; エラー音OFF
