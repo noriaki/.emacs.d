@@ -3,11 +3,10 @@
  '(display-time-mode t)
  '(tool-bar-mode nil)
  '(menu-bar-mode nil)
- '(transient-mark-mode t))
-(custom-set-faces)
-
-;; スクロールバーを消す
-(toggle-scroll-bar nil)
+ '(transient-mark-mode t)
+ '(toggle-scroll-bar nil)) ; スクロールバーを消す
+(custom-set-faces
+ '(default ((t (:background nil)))))
 
 ;; 対応括弧をハイライト
 (show-paren-mode 1)
