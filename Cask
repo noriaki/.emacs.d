@@ -5,6 +5,7 @@
 (depends-on "apache-mode")
 (depends-on "apropospriate-theme")
 (depends-on "async")
+(depends-on "auto-async-byte-compile")
 (depends-on "auto-complete")
 (depends-on "auto-save-buffers-enhanced")
 (depends-on "cask")
