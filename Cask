@@ -11,6 +11,7 @@
 (depends-on "cask")
 (depends-on "darcula-theme")
 (depends-on "dash")
+(depends-on "dired-filter")
 (depends-on "dired-toggle")
 (depends-on "exec-path-from-shell")
 (depends-on "f")
