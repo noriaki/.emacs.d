@@ -37,6 +37,7 @@
 (add-to-list 'ac-modes 'json-mode)
 (add-to-list 'ac-modes 'js2-mode)
 (add-to-list 'ac-modes 'js2-jsx-mode)
+(add-to-list 'ac-modes 'rjsx-mode)
 (add-to-list 'ac-modes 'web-mode)
 (add-to-list 'ac-modes 'scss-mode)
 
