@@ -40,6 +40,7 @@
 (add-to-list 'ac-modes 'rjsx-mode)
 (add-to-list 'ac-modes 'web-mode)
 (add-to-list 'ac-modes 'scss-mode)
+(add-to-list 'ac-modes 'yaml-mode)
 
 ;; 日本語回避
 (defadvice ac-word-candidates (after remove-word-contain-japanese activate)
