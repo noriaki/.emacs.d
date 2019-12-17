@@ -41,12 +41,12 @@
 (setq-default dired-toggle-window-size 30) ;; 幅を少し広く
 (global-set-key (kbd "C-x d") 'dired-toggle)
 (global-set-key (kbd "C-x C-d") 'dired-toggle)
-(define-key dired-toggle-mode-map (kbd "C-g") 'dired-toggle-action-quit)
+(define-key dired-mode-map (kbd "C-g") 'dired-toggle-quit)
 (defun noriaki/hide-dired-toggle-mode-hooks () (dired-hide-details-mode t))
 (defun noriaki/show-dired-toggle-mode-hooks () (dired-hide-details-mode -1))
 (add-hook 'dired-toggle-mode-hook 'noriaki/hide-dired-toggle-mode-hooks)
 (advice-add
- 'dired-toggle-action-quit :before 'noriaki/show-dired-toggle-mode-hooks)
+ 'dired-toggle-quit :before 'noriaki/show-dired-toggle-mode-hooks)
 
 ;; Mac環境の場合Commandキーをメタキーへ変更
 (when (eq system-type 'darwin)

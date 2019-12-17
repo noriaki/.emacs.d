@@ -10,5 +10,5 @@
 ;;;(load-theme 'hickey t)
 
 ;; customize railscasts develop
-;;;(load "~/Dropbox/Development/emacs/railscasts-theme/railscasts-theme.el")
+(load "~/Development/emacs/railscasts-theme/railscasts-theme.el")
 (load-theme 'railscasts t nil)
