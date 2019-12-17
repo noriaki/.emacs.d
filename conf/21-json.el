@@ -7,5 +7,5 @@
 (add-hook 'json-mode-hook 'noriaki/align-rules-list-for-javascript)
 
 ;; javascript
-(add-to-list 'auto-mode-alist '("\\.eslintrc.*$" . json-mode))
+(add-to-list 'auto-mode-alist '("\\.eslintrc$" . json-mode))
 (add-to-list 'auto-mode-alist '("\\.babelrc$" . json-mode))
