@@ -3,7 +3,8 @@
 ;; インデントをスペースに
 (setq-default indent-tabs-mode nil)
 ;; 基本インデント幅を2に
-(setq-default tab-width 2)
+(setq my-indent-num 2)
+(setq-default tab-width my-indent-num)
 
 ;; (C-M-\) 選択リージョンのインデントを揃えるキーバインド
 ;; リージョン未選択時はバッファ全体をインデントする
