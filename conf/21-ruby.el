@@ -47,6 +47,6 @@
 (add-hook 'ruby-mode-hook 'noriaki/flycheck-ruby-mode-hooks)
 
 ;; ruby-block
-(require 'ruby-block)
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle t)
+;;(require 'ruby-block)
+;;(ruby-block-mode t)
+;;(setq ruby-block-highlight-toggle t)
