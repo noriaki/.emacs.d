@@ -26,8 +26,8 @@
 ;; functions: conf/20-functions-flycheck-eslint.el
 (eval-after-load 'rjsx-mode
   '(add-hook 'rjsx-mode-hook #'add-node-modules-path))
-(eval-after-load 'rjsx-mode
-  '(add-hook 'rjsx-mode-hook #'flycheck-mode))
+;;(eval-after-load 'rjsx-mode
+;;  '(add-hook 'rjsx-mode-hook #'flycheck-mode))
 
 ;; settings: conf/11-align.el
 (add-hook 'rjsx-mode-hook
