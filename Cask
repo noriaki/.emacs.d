@@ -16,6 +16,7 @@
 (depends-on "dash")
 (depends-on "dired-filter")
 (depends-on "dired-toggle")
+(depends-on "eslint-fix")
 (depends-on "exec-path-from-shell")
 (depends-on "f")
 (depends-on "flycheck")

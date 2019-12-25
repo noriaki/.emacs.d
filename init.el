@@ -23,11 +23,12 @@
  ;; If there is more than one, they won't work right.
  '(dired-listing-switches "-alh")
  '(display-time-mode t)
+ '(flycheck-disabled-checkers (quote (javascript-jshint javascript-standard)))
  '(js-indent-level 2)
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (gitattributes-mode gitconfig-mode gitignore-mode ac-js2 undo-tree zenburn-theme yasnippet yaml-mode web-mode tide sublime-themes ssh-config-mode smart-newline scss-mode ruby-end rjsx-mode pallet package-utils markdown-mode magit-popup magit json-mode init-loader haml-mode exec-path-from-shell dired-toggle dired-filter darcula-theme company auto-save-buffers-enhanced auto-complete auto-async-byte-compile apropospriate-theme apache-mode add-node-modules-path)))
+    (eslint-fix gitattributes-mode gitconfig-mode gitignore-mode ac-js2 undo-tree zenburn-theme yasnippet yaml-mode web-mode tide sublime-themes ssh-config-mode smart-newline scss-mode ruby-end rjsx-mode pallet package-utils markdown-mode magit-popup magit json-mode init-loader haml-mode exec-path-from-shell dired-toggle dired-filter darcula-theme company auto-save-buffers-enhanced auto-complete auto-async-byte-compile apropospriate-theme apache-mode add-node-modules-path)))
  '(toggle-scroll-bar nil)
  '(tool-bar-mode nil)
  '(transient-mark-mode t))

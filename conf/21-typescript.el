@@ -1,4 +1,4 @@
-(add-to-list 'auto-mode-alist '("\\.ts$" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx?$" . rjsx-mode))
 
 ;; functions: conf/20-functions-typescript.el
 (add-hook 'rjsx-mode-hook #'setup-tide-mode)
