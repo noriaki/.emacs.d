@@ -10,25 +10,26 @@
 ;; use rjsx-mode for .js, .jsx files
 ;; rjsx-mode derives from js2-jsx-mode
 (autoload 'rjsx-mode "rjsx-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . rjsx-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx$" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?$" . rjsx-mode))
 
-(eval-after-load 'rjsx-mode
-  '(add-hook 'rjsx-mode-hook
-             (lambda ()
-               (setq indent-tabs-mode nil)
-               (setq my-js-mode-indent-num 2)
-               (setq js-indent-level my-js-mode-indent-num)
-               (setq js2-basic-offset my-js-mode-indent-num)
-               (setq js-switch-indent-offset my-js-mode-indent-num)
-               (setq js2-strict-missing-semi-warning nil))))
+(defun my/rjsx-mode-hook ()
+  "My initializing config for rjsx-mode."
+  (setq indent-tabs-mode nil)
+  (setq my-js-mode-indent-num 2)
+  (setq js-indent-level my-js-mode-indent-num)
+  (setq js-switch-indent-offset my-js-mode-indent-num)
+  (setq sgml-basic-offset my-js-mode-indent-num)
+  (setq js2-basic-offset my-js-mode-indent-num)
+  (setq js2-strict-missing-semi-warning nil)
+  (add-hook 'after-save-hook 'eslint-fix nil t))
+
+(add-hook 'rjsx-mode-hook #'my/rjsx-mode-hook)
 
 ;; functions: conf/20-functions-flycheck-eslint.el
-(eval-after-load 'rjsx-mode
-  '(add-hook 'rjsx-mode-hook #'add-node-modules-path))
-;;(eval-after-load 'rjsx-mode
-;;  '(add-hook 'rjsx-mode-hook #'flycheck-mode))
+(add-hook 'rjsx-mode-hook #'add-node-modules-path)
+;;(add-hook 'rjsx-mode-hook #'flycheck-mode)) ;; emacsclientで動かないからglobal化
 
 ;; settings: conf/11-align.el
-(add-hook 'rjsx-mode-hook
-          'noriaki/align-rules-list-for-javascript)
+(add-hook 'rjsx-mode-hook #'noriaki/align-rules-list-for-javascript)
+
+;;; 21-javascript.el ends here
