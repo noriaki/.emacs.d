@@ -10,7 +10,7 @@
 ;; use rjsx-mode for .js, .jsx files
 ;; rjsx-mode derives from js2-jsx-mode
 (autoload 'rjsx-mode "rjsx-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.jsx?$" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?\\'" . rjsx-mode))
 
 (defun my/rjsx-mode-hook ()
   "My initializing config for rjsx-mode."
