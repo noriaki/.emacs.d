@@ -20,12 +20,12 @@
   (setq js-switch-indent-offset my-js-mode-indent-num)
   (setq sgml-basic-offset my-js-mode-indent-num)
   (setq js2-basic-offset my-js-mode-indent-num)
-  (setq js2-strict-missing-semi-warning nil)
-  (add-hook 'after-save-hook 'eslint-fix nil t))
+  (setq js2-strict-missing-semi-warning nil))
 
 (add-hook 'rjsx-mode-hook #'my/rjsx-mode-hook)
 
 ;; functions: conf/20-functions-flycheck-eslint.el
+(add-hook 'rjsx-mode-hook #'js-auto-format-mode)
 (add-hook 'rjsx-mode-hook #'add-node-modules-path)
 ;;(add-hook 'rjsx-mode-hook #'flycheck-mode)) ;; emacsclientで動かないからglobal化
 
