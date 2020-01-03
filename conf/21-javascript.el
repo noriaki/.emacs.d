@@ -25,7 +25,7 @@
 (add-hook 'rjsx-mode-hook #'my/rjsx-mode-hook)
 
 ;; functions: conf/20-functions-flycheck-eslint.el
-(add-hook 'rjsx-mode-hook #'js-auto-format-mode)
+;;(add-hook 'rjsx-mode-hook #'js-auto-format-mode) ;; 完了後bufferが閉じるからNG
 (add-hook 'rjsx-mode-hook #'add-node-modules-path)
 ;;(add-hook 'rjsx-mode-hook #'flycheck-mode)) ;; emacsclientで動かないからglobal化
 
