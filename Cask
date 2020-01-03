@@ -38,7 +38,6 @@
 (depends-on "package-utils")
 (depends-on "pallet")
 (depends-on "popup")
-(depends-on "redo+")
 (depends-on "rjsx-mode")
 (depends-on "ruby-block")
 (depends-on "ruby-end")
