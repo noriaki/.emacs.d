@@ -29,6 +29,15 @@
 (add-hook 'rjsx-mode-hook #'add-node-modules-path)
 ;;(add-hook 'rjsx-mode-hook #'flycheck-mode)) ;; emacsclientで動かないからglobal化
 
+;; eslint --fix ref:https://github.com/tomoya/auto-fix.el
+(add-hook 'auto-fix-mode-hook
+          (lambda () (add-hook 'before-save-hook #'auto-fix-before-save)))
+(defun my/js-auto-fix ()
+  (setq-local auto-fix-command "eslint")
+  (auto-fix-mode -1) ; 同期処理をバッファ保存hookに使うのはNGだった
+  (local-set-key (kbd "C-c ! f") 'auto-fix)) ; 代わりに任意実行にした
+(add-hook 'rjsx-mode-hook #'my/js-auto-fix)
+
 ;; settings: conf/11-align.el
 (add-hook 'rjsx-mode-hook #'noriaki/align-rules-list-for-javascript)
 
