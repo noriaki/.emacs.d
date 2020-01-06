@@ -30,7 +30,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (bury-successful-compilation js-auto-format-mode eslint-fix gitattributes-mode gitconfig-mode gitignore-mode ac-js2 undo-tree zenburn-theme yasnippet yaml-mode web-mode tide sublime-themes ssh-config-mode smart-newline scss-mode ruby-end rjsx-mode pallet package-utils markdown-mode magit-popup magit json-mode init-loader haml-mode exec-path-from-shell dired-toggle dired-filter darcula-theme company auto-save-buffers-enhanced auto-complete auto-async-byte-compile apropospriate-theme apache-mode add-node-modules-path)))
+    (bury-successful-compilation js-auto-format-mode eslint-fix gitattributes-mode gitconfig-mode gitignore-mode ac-js2 undo-tree zenburn-theme yasnippet yaml-mode web-mode tide sublime-themes ssh-config-mode smart-newline scss-mode ruby-end rjsx-mode pallet package-utils markdown-mode magit-popup magit json-mode init-loader haml-mode exec-path-from-shell dired-toggle dired-filter darcula-theme company auto-save-buffers-enhanced auto-async-byte-compile apropospriate-theme apache-mode add-node-modules-path)))
  '(toggle-scroll-bar nil)
  '(tool-bar-mode nil)
  '(transient-mark-mode t))
