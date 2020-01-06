@@ -8,7 +8,6 @@
 (depends-on "apropospriate-theme")
 (depends-on "async")
 (depends-on "auto-async-byte-compile")
-(depends-on "auto-complete")
 (depends-on "auto-fix" :git "https://github.com/tomoya/auto-fix.el.git")
 (depends-on "auto-save-buffers-enhanced")
 (depends-on "bury-successful-compilation")
