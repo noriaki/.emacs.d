@@ -23,7 +23,9 @@
  ;; If there is more than one, they won't work right.
  '(dired-listing-switches "-alh")
  '(display-time-mode t)
- '(flycheck-disabled-checkers (quote (javascript-jshint javascript-standard)))
+ '(flycheck-disabled-checkers
+   (quote
+    (javascript-jshint javascript-standard emacs-lisp-checkdoc)))
  '(js-indent-level 2)
  '(menu-bar-mode nil)
  '(package-selected-packages
