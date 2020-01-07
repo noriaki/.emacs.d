@@ -21,6 +21,22 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-backends
+   (quote
+    (company-bbdb company-eclim company-semantic company-clang company-xcode company-cmake company-files
+                  (company-dabbrev-code company-gtags company-etags company-keywords)
+                  company-oddmuse company-dabbrev company-capf)))
+ '(company-dabbrev-code-modes t)
+ '(company-dabbrev-downcase nil)
+ '(company-dabbrev-ignore-case t)
+ '(company-idle-delay 0.05)
+ '(company-minimum-prefix-length 2)
+ '(company-selection-wrap-around t)
+ '(company-show-numbers t)
+ '(company-tooltip-align-annotations t)
+ '(company-transformers
+   (quote
+    (company-sort-by-backend-importance company-sort-prefer-same-case-prefix company-sort-by-occurrence)))
  '(dired-listing-switches "-alh")
  '(display-time-mode t)
  '(flycheck-disabled-checkers
