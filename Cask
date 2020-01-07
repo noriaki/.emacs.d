@@ -13,6 +13,7 @@
 (depends-on "bury-successful-compilation")
 (depends-on "cask")
 (depends-on "company")
+(depends-on "counsel")
 (depends-on "darcula-theme")
 (depends-on "dash")
 (depends-on "dired-filter")
