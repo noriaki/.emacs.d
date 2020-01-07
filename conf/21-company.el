@@ -34,7 +34,28 @@
 (custom-set-variables
  '(company-idle-delay 0.05)
  '(company-minimum-prefix-length 2)
- '(company-selection-wrap-around t))
+ '(company-selection-wrap-around t)
+ '(company-dabbrev-code-modes t)
+ '(company-dabbrev-downcase nil)
+ '(company-dabbrev-ignore-case t)
+ '(company-show-numbers t)
+ '(company-tooltip-align-annotations t)
+ '(company-transformers
+   '(company-sort-by-backend-importance
+     company-sort-prefer-same-case-prefix
+     company-sort-by-occurrence))
+ '(company-backends
+   '(company-bbdb
+     company-eclim
+     company-semantic
+     company-clang
+     company-xcode
+     company-cmake
+     company-files
+     (company-dabbrev-code company-gtags company-etags company-keywords)
+     company-oddmuse
+     company-dabbrev
+     company-capf)))
 
 (with-eval-after-load 'company
   (my/company-customize-keybind)
