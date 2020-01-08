@@ -9,7 +9,8 @@
 (add-hook 'after-init-hook
           (lambda ()
             (ivy-mode 1)
-            (counsel-mode 1)))
+            (counsel-mode 1)
+            (ivy-rich-mode 1)))
 
 (custom-set-variables
  '(ivy-use-virtual-buffers t)

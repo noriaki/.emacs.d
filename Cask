@@ -28,6 +28,7 @@
 (depends-on "gitignore-mode")
 (depends-on "haml-mode")
 (depends-on "init-loader")
+(depends-on "ivy-rich")
 (depends-on "js-auto-format-mode")
 (depends-on "js2-mode")
 (depends-on "json-mode")
