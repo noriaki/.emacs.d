@@ -8,6 +8,7 @@
 
 (add-hook 'after-init-hook
           (lambda ()
+            (icomplete-mode -1) ; ivy-modeとicomplete-modeは共存できない
             (ivy-mode 1)
             (counsel-mode 1)
             (ivy-rich-mode 1)))
@@ -22,3 +23,7 @@
 
 (with-eval-after-load 'counsel
   (my/counsel-ivy-swiper-key-binding))
+
+;; magit
+(with-eval-after-load 'magit
+  (setq magit-completing-read-function 'ivy-completing-read))
