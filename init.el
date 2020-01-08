@@ -39,9 +39,15 @@
     (company-sort-by-backend-importance company-sort-prefer-same-case-prefix company-sort-by-occurrence)))
  '(dired-listing-switches "-alh")
  '(display-time-mode t)
+ '(enable-recursive-minibuffers t)
  '(flycheck-disabled-checkers
    (quote
     (javascript-jshint javascript-standard emacs-lisp-checkdoc)))
+ '(ivy-count-format "(%d/%d) ")
+ '(ivy-extra-directories nil)
+ '(ivy-height 15)
+ '(ivy-use-virtual-buffers t)
+ '(ivy-wrap t)
  '(js-indent-level 2)
  '(menu-bar-mode nil)
  '(package-selected-packages
