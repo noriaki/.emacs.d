@@ -52,3 +52,6 @@ flycheck_*.el
 
 # auto-save
 /auto-save-list/
+
+# recentf
+/recentf
