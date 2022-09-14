@@ -46,10 +46,10 @@
      company-sort-by-occurrence))
  '(company-backends
    '(company-bbdb
-     company-eclim
+;;;     company-eclim
      company-semantic
      company-clang
-     company-xcode
+;;;     company-xcode
      company-cmake
      company-files
      (company-dabbrev-code company-gtags company-etags company-keywords)
