@@ -12,3 +12,9 @@
 ;; customize railscasts develop
 (load "~/Development/emacs/railscasts-theme/railscasts-theme.el")
 (load-theme 'railscasts t nil)
+
+;; own: set transparent background and dark theme
+(custom-set-variables
+ '(frame-background-mode 'dark))
+(custom-set-faces
+ '(default ((t (:background nil)))))
