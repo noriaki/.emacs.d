@@ -5,4 +5,5 @@
                                 emacs-lisp-checkdoc)))
 
 ;; node_modules/.bin/eslint があれば使う設定
-(require 'add-node-modules-path)
+;;;(require 'add-node-modules-path)
+;;; see: 21-javascript.el -- (add-hook 'rjsx-mode-hook #'add-node-modules-path)
